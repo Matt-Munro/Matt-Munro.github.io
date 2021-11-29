@@ -1,0 +1,110 @@
+/* Shadows */
+/*  Created using Josh Comeau's Shadow Palette Generator
+    Available at: https://www.joshwcomeau.com/shadow-palette/
+ */
+:root {
+    --shadow-color: 0deg 0% 69%;
+    --shadow-elevation-medium:
+            0.5px 0.7px 0.8px hsl(var(--shadow-color) / 0.4),
+            1.3px 1.7px 2.1px -1.1px hsl(var(--shadow-color) / 0.35),
+            3.7px 4.7px 5.9px -2.3px hsl(var(--shadow-color) / 0.29),
+            9.7px 12.3px 15.4px -3.4px hsl(var(--shadow-color) / 0.24);
+    --shadow-elevation-high:
+            0.5px 0.7px 0.8px hsl(var(--shadow-color) / 0.37),
+            1.9px 2.4px 3px -0.5px hsl(var(--shadow-color) / 0.35),
+            3.6px 4.5px 5.7px -1px hsl(var(--shadow-color) / 0.32),
+            6.4px 8.1px 10.1px -1.5px hsl(var(--shadow-color) / 0.3),
+            11px 13.9px 17.4px -2px hsl(var(--shadow-color) / 0.27),
+            18.2px 23.1px 28.9px -2.5px hsl(var(--shadow-color) / 0.24),
+            28.8px 36.5px 45.7px -3px hsl(var(--shadow-color) / 0.22),
+            43.4px 55.1px 68.9px -3.4px hsl(var(--shadow-color) / 0.19);
+}
+
+@font-face{
+    font-family: "Cooper Hewitt";
+    src: url("/CooperHewitt-Book.woff") format("woff");
+}
+
+.header a{
+    color: #E60067FF;
+    font-family: "Cooper Hewitt", serif;
+    font-size: 2em;
+}
+
+#heading_other_projects {
+    color: #E60067FF;
+    font-family: "Cooper Hewitt", serif;
+    font-size: 1.3em;
+    padding-top: 50px;
+}
+
+#coming_soon {
+    color: gainsboro;
+}
+
+.header {
+    margin: auto;
+    width: 50%;
+    margin-top: 5%;
+}
+
+#div_main_block {
+    margin: auto;
+    width: 50%;
+    padding-top: 7%;
+}
+
+#img_portrait {
+    width: 100px;
+    border-radius: 3%;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+#div_portrait {
+    float: left;
+    padding-right: 50px;
+}
+
+#div_text {
+    width: 70%;
+    float: left;
+    max-width: 500px;
+    font-family: "IBM Plex Serif", serif;
+}
+
+#div_text p{
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #E60067FF;
+}
+
+a:hover {
+    cursor: pointer;
+    color: lightskyblue;
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+    #div_text {
+        width: auto;
+
+        float: left;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+
+    #div_main_block {
+        margin: auto;
+        width: 80%;
+        padding-top: 5%;
+    }
+
+    .header {
+        margin: auto;
+        width: 80%;
+        margin-top: 3%;
+    }
+}
