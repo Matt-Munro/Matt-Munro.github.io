@@ -1,0 +1,49 @@
+.heading-project {
+    color: #E60067FF;
+    font-family: "Cooper Hewitt", serif;
+}
+
+.subheading-project {
+    color: #E60067FF;
+    font-family: "Cooper Hewitt", serif;
+}
+
+
+.img_portfolio {
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+.div-project-image {
+    float: left;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.portfolio-link {
+    padding-right: 20px;
+}
+
+.portfolio-project {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    border-bottom: 1px solid gainsboro;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .div-project-image {
+        float: none;
+        padding-right: 50px;
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+
+}

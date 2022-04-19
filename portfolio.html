@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <!--    Styling  -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <!--    Fonts   -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="/index.html">Matt Foulis</a>
+    <a id="heading-portfolio" href="/portfolio.html">Portfolio</a>
+</div>
+
+<div id="div_main_block">
+
+
+    <div class="portfolio-project">
+
+        <h1 class="heading-project">Dialogical Fingerprinting</h1>
+        <h2 class="subheading-project">QT, Touchscreen, Academic Paper</h2>
+
+        <div class="div-project-image">
+            <img class="img_portfolio" src="images/df-screenshot.png" alt="portrait">
+        </div>
+
+
+        <p>During my internship at the <a href="https://arg-tech.org/" target="_blank">Centre for Argument
+            Technology</a>, I developed a demonstration app for a large touch-screen device. The app showcases the work
+            that the group had carried out for Dialogical Fingerprinting, a computational way of classifying speakers
+            and their roles in a dialogue. This needed to be understandable to a general audience and provide
+            interaction so a user could explore the various techniques being used.
+        </p>
+        <p>
+            The app plays the audio of an episode the BBC Radio 4 programme the Moral Maze, the data used for training
+            and testing, and shows the results of the classification system after each speaker turn. Different
+            parameters such as Machine Learning model, feature set, and programme episode can be chose and compared.
+        </p>
+        <p>
+            The app was created using the <a href="https://www.qt.io/" target="_blank">QT framework</a>, making use of
+            both the C++ bindings and the QML language. Touch-screen interaction allows for button presses, scrolling on
+            a waveform image to control audio playback, and scrolling through a list of speaker images to gain more
+            information. Various builds were used for testing and release including Android, Linux, and MacOS.
+        </p>
+        <p>
+            After the completion of the project, I was lead author for the paper describing its implementation. The
+            paper can be seen here: <a
+                href="https://discovery.dundee.ac.uk/ws/portalfiles/portal/52034786/FAIA_326_FAIA200536.pdf"
+                target="_blank">Dialogical Fingerprinting of Debaters</a> .
+        </p>
+        <p>
+            Video: <a class="portfolio-link" href="https://youtu.be/O2APn1VeJeY" target="_blank">YouTube</a>
+        </p>
+    </div>
+
+
+    <hr />
+
+
+    <div class="portfolio-project">
+
+        <h1 class="heading-project">Fake News Chatbot</h1>
+        <h2 class="subheading-project">React, Docker, DGEP, Google Firebase</h2>
+
+        <div class="div-project-image">
+            <img class="img_portfolio" src="images/fni-screenshot.png" alt="portrait">
+        </div>
+
+
+        </p>
+        As part of a research project involving Fake News in relation to COVID-19 and how fallacious arguments are used
+        in news reporting, I developed a chatbot which aims to teach users how to spot these fallacies through examples
+        and questions. Users are presented with a news story then asked questions by one of the avatars (modelled after
+        Socrates, Gorgias, and Aristotle).
+        </p>
+        <p>
+            The web-app was developed with React and interfaces with the Dialogue Game Execution Platform (developed by
+            the <a href="https://arg-tech.org/" target="_blank">Centre for Argument Technology</a> see
+            <a href="https://discovery.dundee.ac.uk/ws/files/52404824/FAIA_326_FAIA200540.pdf" target="_blank">the
+                paper</a> for more information.) The app was served
+            via a Docker container and utilises Google Firebase for analytics and data storage.
+        <p>
+            Website: <a class="portfolio-link" href="http://fni.arg.tech/" target="_blank">Fake News Infodemic
+            Chatbot</a>
+        </p>
+    </div>
+
+    <hr />
+
+    <div class="portfolio-project">
+
+        <h1 class="heading-project">Honours Project</h1>
+        <h2 class="subheading-project">Machine Learning and Website</h2>
+
+        <div class="div-project-image">
+            <img class="img_portfolio" src="images/XAI-screenshot.png" alt="portrait">
+        </div>
+
+
+        <p>
+            My fourth year honours project was split into two parts. Firstly, I developed a machine learning
+            classification system for data from the United States Presidential Election debates from 2016. Using <a
+                href="https://scikit-learn.org/stable/" target="_blank">Scikit-learn</a>, I classified propositions into
+            Fact, Value, or Policy types. Fact being a statement about the world which can be true or false ('It is
+            raining'), Value being a subjective assessment ('War and Peace is the best book of all time'), and Policy
+            being a proposal for future action ('We should invest in green energy technology') (see <a
+                href="https://periodic-table-of-arguments.org/"
+                target="_blank">https://periodic-table-of-arguments.org/</a> for further details on the class types).
+            Various features were incorporated including specificity (using <a
+                href="https://github.com/jjessyli/speciteller"
+                target="_blank">https://github.com/jjessyli/speciteller</a>), sentiment, and part-of-speech. Using a
+            support vector machine model, an F1 of 0.65 was achieved. Various techniques such as hyper-parameter
+            optimisation were used in the project.
+        </p>
+        <p>
+            For the second part of the project an interactive website was developed, demonstrating the results of the ML
+            project and various explainable artificial intelligence (XAI) techniques that can be used to try and
+            understand what is behind a ML decision. The website features interactive plots developed using <a
+                href="https://d3js.org/" target="_blank">D3.js</a> which allow users to gain a more involved
+            understanding of various ML and XAI techniques.
+        </p>
+        <p>
+            Website: <a class="portfolio-link"
+                        href="https://zeno.computing.dundee.ac.uk/2019-projects/matthewfoulis/index.html"
+                        target="_blank">XAI</a>
+            Source code: <a class="portfolio-link" href="https://github.com/MattFoulis/Honours-Project" target="_blank">GitHub</a>
+        </p>
+    </div>
+
+    <hr/>
+
+    <div class="portfolio-project">
+
+        <h1 class="heading-project">Game Design</h1>
+        <h2 class="subheading-project">Unity and MAX/MSP</h2>
+
+        <div class="div-project-image">
+            <img class="img_portfolio" src="images/game-screenshot.png" alt="portrait">
+        </div>
+
+
+        </p>
+        Part of my undergraduate program involved designing and implementing a video game. For this I used the <a
+            href="https://unity.com/" target="_blank">Unity Game Engine</a> and <a
+            href="https://cycling74.com/products/max" target="_blank">MAX/MSP</a>. The game presents the user with an
+        interface similar to that of a drum machine. The buttons on the interface correspond to different instruments
+        and rhythms. A loop iterates across the buttons and plays a sound for each one that has been selected by the
+        user. When a sound is made, a part of the environment is changed from its default state of being invisible, to
+        being visible. In this way, the user can navigate the environment through the creation of music.
+        To do this, the Unity code receives User Datagram Protocol information from the Max application, which is used
+        to create the sounds.
+        </p>
+        <p>
+            Various game design techniques were involved including a 3D environment, first-person camera and movement,
+            moving platforms, scene transitions, and the sound invisible/visible state management.
+        <p>
+            Source code: <a class="portfolio-link" href="https://github.com/MattFoulis/GameDev"
+                            target="_blank">GitHub</a>
+            Video: <a class="portfolio-link" href="https://youtu.be/AqMUTPVOggE" target="_blank">YouTube</a>
+        </p>
+    </div>
+
+    <hr/>
+
+
+    <div class="portfolio-project">
+
+        <h1 class="heading-project">Graphics Projects</h1>
+        <h2 class="subheading-project">OpenGL</h2>
+
+        <div class="div-project-image">
+            <img class="img_portfolio" src="images/opengl-screenshot.png" alt="portrait">
+        </div>
+
+
+        <p>Using <a href="https://www.opengl.org/" target="_blank">OpenGL</a>, <a href="http://glew.sourceforge.net/"
+                                                                                  target="_blank">GLEW</a>, <a
+                href="https://www.glfw.org/" target="_blank">glfw</a>, and <a href="https://github.com/g-truc/glm"
+                                                                              target="_blank">glm</a>, I created a scene
+            making use of various graphics techniques. A sky-box is used to represent the background view of the scene.
+            3D models were then loaded using their normals, uv coordinates, and vertices. A particle system was used to
+            generate snowfall, this could be controlled to alter the speed and spread. A sprite sheet was used to create
+            a burning fire effect. Camera adjustment was also added to allow rotation and movement within the scene.
+        </p>
+        <p>
+            Source code: <a class="portfolio-link" href="https://github.com/MattFoulis/OpenGL"
+                            target="_blank">GitHub</a>
+        </p>
+    </div>
+
+
+
+</div>
+
+
+</body>
+</html>
